@@ -24,8 +24,6 @@ board_1 = [
 
 
 def solve(bo):
-  global counter 
-  counter += 1
   find = find_empty(bo) #return next empty (row, col)
   if not find:
       return True
@@ -102,9 +100,7 @@ def find_empty(bo):
 
 
 print_board(board)
-counter = 0
 solve(board)
 print("\n- - - - solution - - - \n")
 print_board(board)
-print(counter)
 
